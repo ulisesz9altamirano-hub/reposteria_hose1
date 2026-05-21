@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefaf7;
+    color: #4e3c31;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 4px dashed #f5dbd0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    color: #b57c68;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #8a7365;
+}
+
+/* Banner Principal */
+#banner {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(78, 60, 49, 0.4); /* Sombreado oscuro arriba de la foto para leer bien el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-overlay h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.seccion-titulo {
+    font-family: 'Playfair Display', serif;
+    color: #b57c68;
+    font-size: 2.2rem;
+    margin: 50px 0 25px 0;
+    text-align: center;
+}
+
+/* Card Destacada de Tortas */
+.torta-card {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(181, 124, 104, 0.12);
+    border: 1px solid #fdf0ea;
+}
+
+.torta-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 300px;
+}
+
+.torta-info {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.torta-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #b57c68;
+    margin-bottom: 15px;
+}
+
+.torta-info .precio {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #e2725b; /* Color terracota llamativo para el precio */
+    margin-bottom: 15px;
+}
+
+.torta-info .unidad {
+    font-size: 1.1rem;
+    color: #8a7365;
+    font-weight: 300;
+}
+
+/* Grilla de Productos (Cards de Tartas y Especialidades) */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.producto-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(181, 124, 104, 0.06);
+    border: 1px solid #fdf0ea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(181, 124, 104, 0.15);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.producto-body h3 {
+    font-size: 1.2rem;
+    color: #4e3c31;
+    margin-bottom: 8px;
+}
+
+.detalle-sub {
+    font-size: 0.85rem;
+    color: #8a7365;
+    margin-bottom: 10px;
+}
+
+.nota-precio {
+    font-size: 0.9rem;
+    color: #b57c68;
+    font-weight: 600;
+    background-color: #fff5f1;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Footer y Botón */
+footer {
+    background-color: #4e3c31;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #fbe6dd;
+    margin-bottom: 15px;
+}
+
+.contacto-box {
+    margin: 35px 0;
+}
+
+.btn-llamar {
+    display: inline-block;
+    background-color: #25d366;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 16px 35px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-llamar:hover {
+    background-color: #1ed059;
+    transform: scale(1.05);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+}
+
+.sub-contacto {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #cbbab0;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #a49185;
+    margin-top: 40px;
+}
+
+/* Responsivo para Celulares */
+@media (max-width: 768px) {
+    header h1 { font-size: 2.4rem; }
+    .torta-card { grid-template-columns: 1fr; }
+    .banner-overlay h2 { font-size: 2rem; }
+    #banner { height: 280px; }
+}
