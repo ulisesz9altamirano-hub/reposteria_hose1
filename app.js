@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const kilos = parseInt(inputKilos.value) || 1;
 
         // Calculamos precio total ($14.500 el kilo)
-        const precioTotal = kilos * 14500;
+        const precioTotal = kilos * 15000;
         const textoRellenos = rellenosElegidos.join(", ");
         
         // Armamos el WhatsApp
